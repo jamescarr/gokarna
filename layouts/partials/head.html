@@ -1,4 +1,18 @@
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SNTSFJMPTP"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-SNTSFJMPTP');
+  </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -62,20 +76,6 @@
   <script src="{{ .Site.BaseURL }}/js/feather-icons.min.js"></script>
   <script src="{{ .Site.BaseURL }}/js/main.js"></script>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-SNTSFJMPTP"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-SNTSFJMPTP');
-  </script>
   <!-- Option for user to inject custom html -->
   {{ if .Site.Params.CustomHeadHTML }} {{ .Site.Params.CustomHeadHTML | safeHTML
   }} {{ end }}
